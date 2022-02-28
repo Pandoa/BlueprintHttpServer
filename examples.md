@@ -32,6 +32,10 @@ Thread to execute the callback allows to win several milliseconds.
 
 !> You can't create/destroy UObjects outside of the Game Thread without risking a crash.
 
+## Getting the Request's Body
+
+![Get Body](Doc/GetBody.png)
+
 ## Serving static Files
 To serve static files, just call the `Add Mount Point` node.  
 ![Serves static files](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/MountFolder.png?raw=true)
