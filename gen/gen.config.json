@@ -1,0 +1,26 @@
+{
+  "root_url": "http://localhost:3000",
+  "out_dir": "docs/",
+  "src_dir": "src/",
+  "load_timeout": 20000,
+  "remove_selectors": [
+    ".delete-static",
+    "script[src*=\"livereload.js\"]",
+    "iframe[allow=\"join-ad-interest-group\"]"
+  ],
+  "string_replaces": [
+    ["href=\"/\"", "href=\".\""],
+    ["?id=", ".html#"],
+    ["js.html#", "js.html?id="],
+    ["img src=\"/", "img src=\"./"]
+  ],
+  "title_append": " | HTTP Server",
+  "title": {
+    "examples": "How to create an HTTP Server in Unreal Engine",
+    "cppexamples": "How to create an HTTP Server in Unreal Engine using C++"
+  },
+  "descriptions": {
+  },
+  "keywords": {
+  }
+}

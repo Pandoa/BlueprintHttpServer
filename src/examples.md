@@ -7,7 +7,11 @@ store the result in a variable to prevent it from
 being garbage collected.  
 
 
-![Creates a new http server](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/CreateHttpServer.png?raw=true)
+<div class="centered">
+
+![Creates a new http server](_imgs/CreateHttpServer.png)
+
+</div>
 
 ## Creating an HTTPS Server
 To create an HTTPS Server, call the `Create HTTPS Server` node.  
@@ -17,7 +21,11 @@ This node takes 4 parameters:
 3. **Client Ca Cert File Path**: An optional client CA file.
 4. **Client Ca Cert Dir Path**: An optional location where the server should look for CA files.  
 
-![Creates a new https server](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/CreateHttpsServer.png?raw=true)
+<div class="centered">
+
+![Creates a new https server](_imgs/CreateHttpsServer.png)
+
+</div>
 
 ## Listening for a Route
 You can listen for a route with the `Add Route` node.  
@@ -30,34 +38,58 @@ Note that this parameter supports regular expressions for route matching.
 It might be intersting to set it to false for performance reasons. Not having to switch to Game
 Thread to execute the callback allows to win several milliseconds.
 4. **Callback**: The callback executed whenever a client try to access this route.
-  
 
-![Listen for a route](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/AddRoute.png?raw=true)
+
+<div class="centered">
+
+![Listen for a route](_imgs/AddRoute.png)
+
+</div>
 
 !> You can't create/destroy UObjects outside of the Game Thread without risking a crash.
 
 ## Getting the Request's Body
 
-![Get Body](Doc/GetBody.png)
+<div class="centered">
+
+![Get Body](_imgs/GetBody.png)
+
+</div>
 
 ## Serving static Files
 To serve static files, just call the `Add Mount Point` node.  
 
-![Serves static files](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/MountFolder.png?raw=true)
+<div class="centered">
+
+![Serves static files](_imgs/MountFolder.png)
+
+</div>
 
 ## Starting the Server
 Once your routes are configured, call the `Listen` node to start the server.  
 
-![Listen](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/Listen.png?raw=true)
+<div class="centered">
+
+![Listen](_imgs/Listen.png)
+
+</div>
 
 ## Full Example
 With all the previous examples assembled, we arrive to the following result:  
 
-![Full example](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/FullExample.png?raw=true)
+<div class="centered">
 
-If you run this code, you can now open any browser and open the page `https://localhost:8080/`. The following page will show up:  
+![Full example](_imgs/FullExample.png)
 
-![Client example](https://github.com/Pandoa/BlueprintHttpServer/blob/main/Doc/Browser.png?raw=true)
+</div>
+
+If you run this code, you can now open any browser and open the page [https://localhost:8080/](https://localhost:8080/). The following page will show up:  
+
+<div class="centered">
+
+![Client example](_imgs/Browser.png)
+
+</div>
 
 
 
